@@ -1,18 +1,18 @@
 # Chance-Constrained Optimization
 
-The problem of interest is a chance constrained problem that may be formulated as follows:
 
-![equation](https://latex.codecogs.com/png.image?\dpi{150}&space;\displaystyle\inf_x\{f(x):x\in&space;X,\,\,\mathbb{P}[G(x,\xi)\leq&space;0]\leq&space;\alpha\})
+The problem of interest is a chance-constrained problem that may be formulated as follows:
 
-Let ![p(x)](https://latex.codecogs.com/png.image?\dpi{150}&space;p(x)=\mathbb{P}[G(x,\xi)\leq0]) and notice that the empirical probability distribution ![P_N](https://latex.codecogs.com/png.image?\dpi{150}&space;P_N) may be used to estimate ![\mathbb{P}](https://latex.codecogs.com/png.image?\dpi{150}&space;\mathbb{P}).
+    minₓ { f(x) : x ∈ X,  P[G(x, ξ) ≤ 0] ≤ α }
 
-For realizations ![\xi_1,\,\xi_2,\,\dots,\,\xi_N](https://latex.codecogs.com/png.image?\dpi{150}&space;\xi_1,\,\xi_2,\,\dots,\,\xi_N) of ![\xi](https://latex.codecogs.com/png.image?\dpi{150}&space;\xi):
+Let p(x) = P[G(x, ξ) ≤ 0], and note that the empirical probability distribution P_N may be used to estimate P.  
+For realizations ξ₁, ξ₂, ..., ξ_N of ξ:
 
-![p_hat](https://latex.codecogs.com/png.image?\dpi{150}&space;\hat{p}_N(x):=P_N[G(x,\xi)\leq0]=\frac{1}{N}\sum_{i=1}^{N}\mathbb{1}_{(-\infty,0]}[G(x,\xi_i)])
+    p̂_N(x) := P_N[G(x, ξ) ≤ 0] = (1 / N) ∑_{i=1}^{N} 𝟙_{(-∞, 0]}[G(x, ξᵢ)]
 
-The SAA method to solve the above chance constrained problem is generally formulated as:
+The Sample Average Approximation (SAA) method to solve the above chance-constrained problem is generally formulated as:
 
-![saa](https://latex.codecogs.com/png.image?\dpi{150}&space;\displaystyle\inf_x\{f(x):x\in&space;X,\,\,P_N[G(x,\xi)\leq&space;0]\leq&space;\gamma\})
+    minₓ { f(x) : x ∈ X,  P_N[G(x, ξ) ≤ 0] ≤ γ }
 
 
 This repository demonstrates an implementation of chance constrained portfolio allocation using the Sample Average Approximation (SAA) method for chance-constrained programming. The approach and methodology are based on the paper:  
