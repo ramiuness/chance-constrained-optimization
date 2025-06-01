@@ -12,13 +12,16 @@ This repository demonstrates an implementation of chance constrained portfolio a
 
 ### 🛠 Tools & Technologies
 
-**Language**  
+#### 🖥️ Language  
 ![Julia](https://img.shields.io/badge/Julia-9558B2?logo=julia&logoColor=white)
 
-**Optimization**  
-![JuMP](https://img.shields.io/badge/JuMP-00BFFF?logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyBmaWxsPSIjMDAwMDAwIiBoZWlnaHQ9IjEwMCIgd2lkdGg9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI%2BPC9zdmc%2B&label=JuMP)
-![HiGHS](https://img.shields.io/badge/HiGHS-0066CC?logo=gnu&logoColor=white)
+#### ⚙️ Optimization Solvers  
+![JuMP](https://img.shields.io/badge/JuMP-00BFFF?logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyBmaWxsPSIjMDAwMDAwIiBoZWlnaHQ9IjEwMCIgd2lkdGg9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI%2BPC9zdmc%2B&label=JuMP)  
+![HiGHS](https://img.shields.io/badge/HiGHS-0066CC?logo=gnu&logoColor=white)  
 ![Gurobi](https://img.shields.io/badge/Gurobi-EE1C25?logo=gurobi&logoColor=white)
+
+#### 🎲 Simulation Techniques  
+![Monte Carlo](https://img.shields.io/badge/Monte%20Carlo%20Simulations-FFD700?style=flat)
 
 **Statistical Models**  
 ![GMM](https://img.shields.io/badge/Gaussian%20Mixture%20Models-6D4C41?style=flat&logo=scikit-learn&logoColor=white)
