@@ -23,14 +23,8 @@ This repository demonstrates an implementation of chance constrained portfolio a
 #### 🎲 Simulation Techniques  
 ![Monte Carlo](https://img.shields.io/badge/Monte%20Carlo%20Simulations-FFD700?style=flat)
 
-**Statistical Models**  
-![GMM](https://img.shields.io/badge/Gaussian%20Mixture%20Models-6D4C41?style=flat&logo=scikit-learn&logoColor=white)
-
 **Notebook**  
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?logo=jupyter&logoColor=white)
-
-**Backtesting**  
-![Rolling Window](https://img.shields.io/badge/Rolling--Window--Backtesting-4CAF50?style=flat)
 
 
 ## Reference
