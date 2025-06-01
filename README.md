@@ -10,6 +10,15 @@ This repository demonstrates an implementation of chance constrained portfolio a
 - **Notebook**: Contains an interactive Jupyter notebook illustrating the portfolio optimization approach, step-by-step implementation, and results.
 - **Source Code**: Supporting scripts for the main implementation.
 
+### 🛠 Tools & Technologies
+
+![Julia](https://img.shields.io/badge/Julia-9558B2?logo=julia&logoColor=white)
+![JuMP](https://img.shields.io/badge/JuMP-00BFFF?logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyBmaWxsPSIjMDAwMDAwIiBoZWlnaHQ9IjEwMCIgd2lkdGg9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI%2BPC9zdmc%2B&label=JuMP)
+![HiGHS](https://img.shields.io/badge/HiGHS-0066CC?logo=gnu&logoColor=white)
+![Gurobi](https://img.shields.io/badge/Gurobi-EE1C25?logo=gurobi&logoColor=white)
+![Monte Carlo](https://img.shields.io/badge/Monte%20Carlo%20Simulations-FFD700?style=flat)
+
+
 ## Reference
 
 If you use this repository or find it helpful, please consider citing the referenced paper and this repository.
