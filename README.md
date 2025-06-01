@@ -1,26 +1,46 @@
 # Chance-Constrained Optimization
 
-A chance constrained problem that may be formulated as follows:
+## Chance-constrained optimisation model
+
+A chance-constrained problem can be written as
 
 $$
-\displaystyle
-\inf_x \left\{ f(x) : x \in X,\,\, \mathbb{P}[G(x, \xi) \leq 0] \leq \alpha \right\}
+\min_{x \in X}\;
+      \Bigl\{\,f(x)\;:\;
+      \mathbb{P}\!\bigl[\,G(x,\boldsymbol{\xi})\le 0\,\bigr]\le\alpha
+      \Bigr\}.
 $$
 
-Let $p(x) = \mathbb{P}[G(x, \xi) \leq 0]$ and notice that the empirical probability distribution $P_N$ may be used to estimate $\mathbb{P}$.  
-For realizations $\xi_1,\, \xi_2,\, \dots,\, \xi_N$ of $\xi$:
+Let  
+
+\[
+p(x)\;=\;\mathbb{P}\!\bigl[\,G(x,\boldsymbol{\xi})\le 0\,\bigr],
+\]
+
+and estimate the probability with the empirical measure  
+\(P_N = \tfrac1N\sum_{i=1}^N \delta_{\xi_i}\) based on the samples
+\(\xi_1,\dots,\xi_N\):
+
+\[
+\hat p_N(x)
+  := P_N\!\bigl[G(x,\boldsymbol{\xi})\le 0\bigr]
+  = \frac1N\sum_{i=1}^{N}\mathbf 1_{(-\infty,0]}\!\bigl(G(x,\xi_i)\bigr).
+\]
+
+The sample-average approximation (SAA) of the original problem is therefore
 
 $$
-\hat{p}_N(x) := P_N[G(x, \xi) \leq 0] = \frac{1}{N} \sum_{i=1}^{N} \mathbb{1}_{(-\infty, 0]}[G(x, \xi_i)]
+\min_{x \in X}\;
+      \Bigl\{\,f(x)\;:\;
+      P_N\!\bigl[G(x,\boldsymbol{\xi})\le 0\bigr]\le\gamma
+      \Bigr\}.
 $$
 
-The SAA method to solve the above chance constrained problem is generally formulated as:
+### References  
 
-$$
-\displaystyle
-\inf_x \left\{ f(x) : x \in X,\,\, P_N[G(x, \xi) \leq 0] \leq \gamma \right\}
-$$
-
+* **[1]** A. Shapiro, D. Dentcheva & A. Ruszczyński, *Lectures on Stochastic Programming: Modeling and Theory*, SIAM, 2014.  
+* **[2]** R. Liu & A. Shapiro, “Sample average approximation of chance constrained programming: feasibility and stability,” *SIAM J. Optim.*, 2009.  
+* **[3]** P. Kall & S. W. Wallace, *Stochastic Programming*, John Wiley & Sons, 1994.
 
 
 
