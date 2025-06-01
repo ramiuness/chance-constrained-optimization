@@ -1,22 +1,26 @@
 # Chance-Constrained Optimization
 
-Achance constrained problem that may be formulated as follows:
+A chance constrained problem that may be formulated as follows:
 
 $$
 \displaystyle
-\inf_x\{f(x): x\in X,\,\, \mathbb{P}[G(x,\xi)\leq 0]\leq \alpha\}
+\inf_x \left\{ f(x) : x \in X,\,\, \mathbb{P}[G(x, \xi) \leq 0] \leq \alpha \right\}
 $$
 
-Let $p(x)= \mathbb{P}[G(x,\xi)\leq 0]$ and notice that the empirical probability distribution $P_N$ may be used to estimate $\mathbb{P}$. For realizations $\xi_1,\,\xi_2,\,\dots,\,\xi_N$ of $\xi$:
+Let $p(x) = \mathbb{P}[G(x, \xi) \leq 0]$ and notice that the empirical probability distribution $P_N$ may be used to estimate $\mathbb{P}$.  
+For realizations $\xi_1,\, \xi_2,\, \dots,\, \xi_N$ of $\xi$:
+
 $$
-\hat{p}_N(x) := P_N[G(x,\xi)\leq 0] = \frac{1}{N}\sum_{i=1}^{N}\mathbb{1}_{(-\infty,0]}[G(x,\xi_i)]
+\hat{p}_N(x) := P_N[G(x, \xi) \leq 0] = \frac{1}{N} \sum_{i=1}^{N} \mathbb{1}_{(-\infty, 0]}[G(x, \xi_i)]
 $$
 
 The SAA method to solve the above chance constrained problem is generally formulated as:
+
 $$
 \displaystyle
-\inf_x\{f(x): x\in X,\,\, P_N[G(x,\xi)\leq 0]\leq \gamma\}
+\inf_x \left\{ f(x) : x \in X,\,\, P_N[G(x, \xi) \leq 0] \leq \gamma \right\}
 $$
+
 
 
 
