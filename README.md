@@ -1,47 +1,18 @@
 # Chance-Constrained Optimization
 
-## Chance-constrained optimisation model
+The problem of interest is a chance constrained problem that may be formulated as follows:
 
-A chance-constrained problem can be written as
+![equation](https://latex.codecogs.com/png.image?\dpi{150}&space;\displaystyle\inf_x\{f(x):x\in&space;X,\,\,\mathbb{P}[G(x,\xi)\leq&space;0]\leq&space;\alpha\})
 
-$$
-\min_{x \in X}\;
-      \Bigl\{\,f(x)\;:\;
-      \mathbb{P}\!\bigl[\,G(x,\boldsymbol{\xi})\le 0\,\bigr]\le\alpha
-      \Bigr\}.
-$$
+Let ![p(x)](https://latex.codecogs.com/png.image?\dpi{150}&space;p(x)=\mathbb{P}[G(x,\xi)\leq0]) and notice that the empirical probability distribution ![P_N](https://latex.codecogs.com/png.image?\dpi{150}&space;P_N) may be used to estimate ![\mathbb{P}](https://latex.codecogs.com/png.image?\dpi{150}&space;\mathbb{P}).
 
-Let  
+For realizations ![\xi_1,\,\xi_2,\,\dots,\,\xi_N](https://latex.codecogs.com/png.image?\dpi{150}&space;\xi_1,\,\xi_2,\,\dots,\,\xi_N) of ![\xi](https://latex.codecogs.com/png.image?\dpi{150}&space;\xi):
 
-\[
-p(x)\;=\;\mathbb{P}\!\bigl[\,G(x,\boldsymbol{\xi})\le 0\,\bigr],
-\]
+![p_hat](https://latex.codecogs.com/png.image?\dpi{150}&space;\hat{p}_N(x):=P_N[G(x,\xi)\leq0]=\frac{1}{N}\sum_{i=1}^{N}\mathbb{1}_{(-\infty,0]}[G(x,\xi_i)])
 
-and estimate the probability with the empirical measure  
-\(P_N = \tfrac1N\sum_{i=1}^N \delta_{\xi_i}\) based on the samples
-\(\xi_1,\dots,\xi_N\):
+The SAA method to solve the above chance constrained problem is generally formulated as:
 
-\[
-\hat p_N(x)
-  := P_N\!\bigl[G(x,\boldsymbol{\xi})\le 0\bigr]
-  = \frac1N\sum_{i=1}^{N}\mathbf 1_{(-\infty,0]}\!\bigl(G(x,\xi_i)\bigr).
-\]
-
-The sample-average approximation (SAA) of the original problem is therefore
-
-$$
-\min_{x \in X}\;
-      \Bigl\{\,f(x)\;:\;
-      P_N\!\bigl[G(x,\boldsymbol{\xi})\le 0\bigr]\le\gamma
-      \Bigr\}.
-$$
-
-### References  
-
-* **[1]** A. Shapiro, D. Dentcheva & A. Ruszczyński, *Lectures on Stochastic Programming: Modeling and Theory*, SIAM, 2014.  
-* **[2]** R. Liu & A. Shapiro, “Sample average approximation of chance constrained programming: feasibility and stability,” *SIAM J. Optim.*, 2009.  
-* **[3]** P. Kall & S. W. Wallace, *Stochastic Programming*, John Wiley & Sons, 1994.
-
+![saa](https://latex.codecogs.com/png.image?\dpi{150}&space;\displaystyle\inf_x\{f(x):x\in&space;X,\,\,P_N[G(x,\xi)\leq&space;0]\leq&space;\gamma\})
 
 
 This repository demonstrates an implementation of chance constrained portfolio allocation using the Sample Average Approximation (SAA) method for chance-constrained programming. The approach and methodology are based on the paper:  
