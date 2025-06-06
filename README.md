@@ -7,8 +7,8 @@ This repository demonstrates an implementation of chance constrained portfolio a
 
 ## Contents
 
-- **Notebook**: Contains an interactive Jupyter notebook illustrating the portfolio optimization approach, step-by-step implementation, and results.
-- **Source Code**: Supporting scripts for the main implementation.
+**Notebook**: Contains an interactive Jupyter notebook illustrating the portfolio optimization approach, step-by-step implementation, and results.
+
 
 ### 🛠 Tools & Technologies
 
